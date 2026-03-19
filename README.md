@@ -127,34 +127,6 @@ python js_tiqu.py -i js.txt -d http://example.com -p /static/js -o result.txt
 | `-p` | 是 | JS 路径前缀（如 `/static/js`）|
 | `-o` | 否 | 输出文件（不指定则打印到终端）|
 
-
-```bash
-# 基本用法：过滤 result.txt 中含 delete/del 的接口，覆盖原文件并备份
-python filter_delete_api.py -i result.txt
-
-# 输出到新文件，不覆盖原文件
-python filter_delete_api.py -i result.txt -o filtered_result.txt
-
-# 自定义过滤关键字
-python filter_delete_api.py -i result.txt -k delete del remove
-
-# 区分大小写
-python filter_delete_api.py -i result.txt --case-sensitive
-
-# 不备份原文件
-python filter_delete_api.py -i result.txt --no-backup
-```
-
-| 参数 | 说明 |
-|---|---|
-| `-i` | 输入文件路径 |
-| `-o` | 输出文件路径（不指定则覆盖原文件）|
-| `-k` | 过滤关键字列表（默认：`delete del`）|
-| `--case-sensitive` | 区分大小写（默认不区分）|
-| `--no-backup` | 不备份原文件（默认会备份为 `.bak`）|
-
----
-
 ## 输入输出文件说明
 
 | 文件 | 来源 | 说明 |

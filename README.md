@@ -1,4 +1,4 @@
-# JS API 提取工具套件
+# AutoJS
 
 从 Webpack 打包的前端项目中自动提取 JS 文件列表，并批量请求 JS 文件提取其中的 API 接口路径。
 

@@ -127,7 +127,6 @@ python js_tiqu.py -i js.txt -d http://example.com -p /static/js -o result.txt
 | `-p` | 是 | JS 路径前缀（如 `/static/js`）|
 | `-o` | 否 | 输出文件（不指定则打印到终端）|
 
-### `filter_delete_api.py` — 过滤删除类接口
 
 ```bash
 # 基本用法：过滤 result.txt 中含 delete/del 的接口，覆盖原文件并备份
